@@ -1,0 +1,154 @@
+/* Google Fonts: Bai Jamjuree */
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+
+/* CSS Colors Variables */
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+/* Hero Sections Starts Here */
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+
+.hero .logo img{
+    width: 7.5rem;
+}
+
+.hero .information{
+    /* border: 2px solid black; */
+    text-align: center;
+    margin-top: 3rem;
+    /* -webkit-margin-collapse: collapse; */
+}
+
+.hero .information h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.hero .information p{
+    /* border: 2px solid black; */
+    margin-bottom: 2rem;
+    color: var(--Grayish-Blue);
+}
+
+
+
+.hero .hero-buttons #ios_button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;  
+    cursor: pointer;  
+    box-shadow: 2px 2px 2px  #aaaaaaaa;
+    color: var(--dark-cyan);
+    font-weight: 400;
+    background-color: var(--Strong-Cyan);
+    color: #fff;
+    
+}
+
+.hero .hero-buttons #mac_button{
+    margin-left: 1rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;  
+    cursor: pointer;  
+    box-shadow: 2px 2px 2px  #aaaaaaaa;
+    color: var(--dark-cyan);
+    font-weight: 400;
+    background-color: var(--Light-Blue);
+    color: #fff;
+}
+
+/* Hero Sections End Here */
+
+@media (max-width: 569px){
+    .hero .information h1
+    {
+        font-size: 2.3rem;
+        margin: auto;
+        /* border: 2px solid black; */
+        width: 23rem;
+        margin-bottom: 1rem;
+    }
+    .hero .hero-buttons #ios_button 
+    {
+        padding: 10px 19px;
+        font-size: 18px;
+    }
+
+    .hero .hero-buttons #mac_button 
+    {
+        padding: 10px 17px;
+        font-size: 18px;
+    }
+    
+    .hero .information p {
+        font-size: 1rem;
+        margin: auto;
+        margin-bottom: 2rem;
+        /* border: 2px solid black; */
+        width: 19rem;
+    }
+}
+
+@media (max-width: 388px){
+    .hero .information h1
+    {
+        font-size: 2rem;
+        margin: auto;
+        /* border: 2px solid black; */
+        width: 21rem;
+        margin-bottom: 1rem;
+    }
+    .hero .hero-buttons #ios_button 
+    {
+        padding: 10px 70px;
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+
+    .hero .hero-buttons #mac_button 
+    {
+        padding: 10px 70px;
+        font-size: 15px;
+    }
+    .hero .information p {
+        font-size: 0.9rem;
+        margin: auto;
+        margin-bottom: 2rem;
+        /* border: 2px solid black; */
+        width: 20rem;
+    }
+}
+
+
